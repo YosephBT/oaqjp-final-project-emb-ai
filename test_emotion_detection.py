@@ -3,6 +3,15 @@ import unittest
 
 class TestEmotionDetector(unittest.TestCase):
     def test_emotion_detector(self):
+        """
+        Module Name: em_detector
+
+        Description:
+        Gets text input form the user and provide emotion 
+
+        Author: Yoseph
+        Date: 2025
+        """
         result_1 = emotion_detector('I am glad this happened')
         self.assertEqual(result_1['dominant_emotion'], 'joy')
 

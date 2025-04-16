@@ -3,7 +3,20 @@ import json
 
 
 
-def emotion_detector(text_to_analyse):  
+def emotion_detector(text_to_analyse):
+    """
+    Module Name: em_detector
+
+    Description:
+        A brief description of what this module does. Explain its purpose, 
+        functionality, and any important details that users should know.
+
+    Usage:
+        Provide examples of how to use the functions or classes in this module.
+
+    Author: Yoseph
+    Date: 2025
+    """
     url = 'https://sn-watson-emotion.labs.skills.network/v1/watson.runtime.nlp.v1/NlpService/EmotionPredict'
     header = {"grpc-metadata-mm-model-id": "emotion_aggregated-workflow_lang_en_stock"}
     myobj = { "raw_document": { "text": text_to_analyse } } 
